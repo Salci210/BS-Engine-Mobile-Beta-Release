@@ -2050,11 +2050,11 @@ class PlayState extends MusicBeatState
 		super.update(elapsed);
 
 		if(ratingString == '?') {
-			scoreTxt.text = 'Pontos: ' + songScore + ' | Nota: ' + ratingString;
-			judgementCounter.text = 'Sicks: 0 \nGoods: 0\nBads: 0\nShits: 0\nErros: 0\n haha kek';
+			scoreTxt.text = 'Score: ' + songScore + ' | Accuracy: ' + ratingString;
+			judgementCounter.text = 'Sicks: 0 \nGoods: 0\nBads: 0\nShits: 0\nMisses: 0\n haha kek';
 		} else {
-			judgementCounter.text = 'Sicks: ${sicks}\nGoods: ${goods}\nBads: ${bads}\nShits: ${shits}\nErros: ${songMisses}\nkek';
-			scoreTxt.text = 'Pontos: ' + songScore + ' | Nota: ' + ratingString + ' (' + Highscore.floorDecimal(ratingPercent * 100, 2) + '%)';
+			judgementCounter.text = 'Sicks: ${sicks}\nGoods: ${goods}\nBads: ${bads}\nShits: ${shits}\nMisses: ${songMisses}\nkek';
+			scoreTxt.text = 'Score: ' + songScore + ' | Accuracy: ' + ratingString + ' (' + Highscore.floorDecimal(ratingPercent * 100, 2) + '%)';
 		}
 
 
