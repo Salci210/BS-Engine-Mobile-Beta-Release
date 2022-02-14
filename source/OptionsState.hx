@@ -157,19 +157,19 @@ class OptionsState extends MusicBeatState
 			FlxG.sound.play(Paths.sound('secretSound'), 0.7);
 
 			switch(options[curSelected]) {
-				case 'Configuracoes':
+				case 'Configuraciones':
 					openSubState(new PreferencesSubstate());
 
-				case 'Estilo de nota':
+				case 'note color':
 					openSubState(new NotesSubstate());
 
-				case 'Controles Mobile':
+				case 'mobile controls':
 					MusicBeatState.switchState(new CustomControlsState());
 					
-				case 'Controles para Teclado':
+				case 'keyboard controls':
 					openSubState(new ControlsSubstate());
 					
-				case 'voltar ao menu principal':
+				case 'back to menu':
 					MusicBeatState.switchState(new MainMenuState());
 
 			}
